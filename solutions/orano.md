@@ -27,7 +27,7 @@ Orano is strong on the Collect and Organize stages for social and web content: i
 | Context capture | Automatic from saved sources: iOS Share Extension, Android share target, paste-a-link, and uploads (including local video and PDF). Ingestion fetches captions, transcripts, page text, and bounded visual context. |
 | Knowledge organization | LLM extraction into projects with summary, key takeaways, category, priority, estimated time/cost, ordered tasks, and optional research context and learning roadmaps; curated, user-editable memory facts; a knowledge graph of concepts, tools, and people; pgvector embeddings. |
 | Memory evolution | Partial: curated memory facts carry confidence and decay scoring; background workers refresh embeddings and profile preferences. No full consolidation/dream cycle. |
-| Retrieval / use | In-app global and per-project search and chat assistant; MCP tools: list_projects, get_project, get_project_context, search_library, read_memory_facts, get_pending_handoffs. |
+| Retrieval / use | In-app global and per-project search and chat assistant; MCP tools: list_projects, get_project, search_library, get_memory_facts, get_pending_handoffs (current list in https://oranoai.com/mcp.json). |
 | Agent activation / write-back | Read-only MCP server for the user's own agents (ChatGPT, Claude, Cursor, Ollama and other MCP clients) with bearer personal API keys and a 240 calls/hour per-user budget. No agent write access by design; app-triggered handoffs are acknowledged through get_pending_handoffs. |
 | Personal / team scope | Personal scope only; no team or shared workspaces. |
 | Feedback / correction | Projects, tasks, and memory facts are user-editable in the app; account and data deletion paths are documented. |
